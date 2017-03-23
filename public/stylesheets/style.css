@@ -4,12 +4,20 @@ body {
   text-align: center;
 }
 
+.mainTitle {
+    padding-bottom: 0px;
+}
+
 h1 {
     padding: 20px 0px;
 }
 
 a {
-  color: #00B7FF;
+    color: #000;
+}
+
+a:hover {
+    color: #209aca;
 }
 
 ol, ul {
