@@ -1,0 +1,9 @@
+<h1>{{author.fullName}}</h1>
+<h3>{{author.country}}</h3>
+<ul>
+    {{#each author.books}}
+        <li>{{this.title}}, {{this.publication_year}}</li>
+    {{/each}}
+</ul>
+
+<a href="/authors">Main Page</a>

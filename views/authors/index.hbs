@@ -1,0 +1,17 @@
+<h1 class="mainTitle">Favorite Authors</h1>
+
+<ol>
+    {{#each authors}}
+    <li>
+        <h1><a href="/authors/{{this.id}}">{{this.fullName}}</a></h1>
+        <h3>{{this.country}}</h3>
+        <ul>
+            <li>
+                {{#each this.books}}
+                    {{this.title}}, {{this.publication_year}}
+                {{/each}}
+            </li>
+        </ul>
+    </li>
+    {{/each}}
+</ol>
